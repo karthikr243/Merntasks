@@ -13,11 +13,21 @@
     <style>
       .card-image:hover {
         display: flex;
-        height: 190px;
+        height: 320px;
       }
       .card:hover {
         display: flex;
-        transform: translate3D(0px, 2px, 0px) scale(1.03);
+        transform: translate3D(0px, 2px, 0px) scale(1.01);
+      }
+
+      .card-image:hover::after {
+        content: url("../images/image.jpeg"); /* change image on hover */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: none;
       }
     </style>
   </head>
